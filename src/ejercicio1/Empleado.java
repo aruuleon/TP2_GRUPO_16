@@ -72,6 +72,9 @@ public class Empleado {
 		return "Empleado " + nombre + ", edad: " + edad + ", legajo: " + ID;
 	}
 	
+	
+	
+	// lalalalal
 
 	
 }
