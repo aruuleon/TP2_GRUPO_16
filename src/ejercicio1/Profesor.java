@@ -14,21 +14,9 @@ public class Profesor  extends Empleado{
 	}
 	public Profesor(String nombre, int edad, String cargo, int antiguedadDocente) {
         super(nombre, edad); // Llama al constructor de Empleado con nombre y edad
-        setCargo(cargo);
-        setAntiguedadDocente(antiguedadDocente);
+       this.cargo = cargo;
+       this.antiguedadDocente = antiguedadDocente;
     }
 	
-	  //  LOS SETTS Y LOS GETTS 
-	public String getCargo() {
-		return cargo;
-	}
-	public void setCargo(String cargo) {
-		this.cargo = cargo;
-	}
-	public int getAntiguedadDocente() {
-		return antiguedadDocente;
-	}
-	public void setAntiguedadDocente(int antiguedadDocente) {
-		this.antiguedadDocente = antiguedadDocente;
-	}
+
 }
