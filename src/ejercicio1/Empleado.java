@@ -27,6 +27,9 @@ public class Empleado {
 	public int getEdad() {
 		return edad;
 	}
+	public int getId() {
+		return ID;
+	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre.isEmpty() ? "sin nombre" : nombre;
 	}
@@ -43,7 +46,7 @@ public class Empleado {
     
     
 	public String toString() { 
-		return "Empleado " + nombre + ", edad: " + edad + ", legajo: " + ID;
+		return "nombre: " + nombre + ", edad: " + edad + ", legajo: " + ID;
 	}
 	
 	
