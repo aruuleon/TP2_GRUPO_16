@@ -18,5 +18,8 @@ public class Profesor  extends Empleado{
        this.antiguedadDocente = antiguedadDocente;
     }
 	
-
+	@Override
+	public String toString() { 
+		return super.toString() + ", cargo: " + cargo + ", antiguedad docente: " + antiguedadDocente;
+	}
 }
