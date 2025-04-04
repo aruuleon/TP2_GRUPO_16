@@ -3,8 +3,8 @@ package ejercicio2;
 public class ProductosCongelados extends Producto{
 
 	
-	public static final String unidadTemperatura = "°C";
-	int temperaturaCongelado;
+	private static final String unidadTemperatura = "°C";
+	private int temperaturaCongelado;
 
 	
 	

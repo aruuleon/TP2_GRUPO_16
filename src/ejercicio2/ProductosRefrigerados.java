@@ -2,7 +2,7 @@ package ejercicio2;
 
 public class ProductosRefrigerados extends Producto{
 
-	String codigoSupAlimentaria;
+	 private String codigoSupAlimentaria;
 	
 	
 	
