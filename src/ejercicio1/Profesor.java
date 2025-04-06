@@ -1,5 +1,7 @@
 package ejercicio1;
 
+import java.util.Objects;
+
 public class Profesor extends Empleado implements Comparable<Profesor>{
 	
 	// propiedades 
@@ -26,7 +28,22 @@ public class Profesor extends Empleado implements Comparable<Profesor>{
 	
 	@Override
 	public int compareTo(Profesor o) {
-		return 0;
+		return 1;
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(antiguedadDocente, cargo);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Profesor other = (Profesor) obj;
+		return antiguedadDocente == other.antiguedadDocente && Objects.equals(cargo, other.cargo);
 	}
 	
 }
