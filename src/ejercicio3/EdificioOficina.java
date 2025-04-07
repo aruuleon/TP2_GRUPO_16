@@ -9,8 +9,9 @@ public class EdificioOficina implements IEdificio{
 	
 	
 	// constructor 
-	public EdificioOficina(int numeroDeOficinas) {
+	public EdificioOficina(int numeroDeOficinas, double superficie) {
 		this.numeroDeOficinas = numeroDeOficinas;
+		this.superficieEdificioOficina = superficie;
 	}
 
 
@@ -23,12 +24,6 @@ public class EdificioOficina implements IEdificio{
 		this.numeroDeOficinas = numeroDeOficinas;
 	}
 
-
-	public double getSuperficieEdificioOficina() {
-		return superficieEdificioOficina;
-	}
-
-
 	public void setSuperficieEdificioOficina(double superficieEdificioOficina) {
 		this.superficieEdificioOficina = superficieEdificioOficina;
 	}
@@ -40,11 +35,9 @@ public class EdificioOficina implements IEdificio{
 				+ superficieEdificioOficina + "]";
 	}
 
-
 	@Override
 	public double getSuperficieEdificio() {
-		// TODO Auto-generated method stub
-		return 0;
+		return superficieEdificioOficina;
 	}
 
 

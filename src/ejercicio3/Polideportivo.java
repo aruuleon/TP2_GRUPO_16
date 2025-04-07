@@ -1,6 +1,6 @@
 package ejercicio3;
 
-public class Polideportivo implements IInstalacionDeportiva {
+public class Polideportivo implements IInstalacionDeportiva, IEdificio {
 	
 	private String nombre;
     private double superficie;
@@ -36,6 +36,19 @@ public class Polideportivo implements IInstalacionDeportiva {
 
 	@Override
 	public int getTipoDeInstalacion() {
-		return tipoDeInstalacion;
+		return tipoDeInstalacion;   
 	}
+
+	@Override
+	public double getSuperficieEdificio() {
+		return superficie;
+	}
+
+	@Override
+	public String toString() {
+		return "Polideportivo [nombre=" + nombre + ", superficie=" + superficie + ", tipoDeInstalacion="
+				+ tipoDeInstalacion + "]";
+	}
+	
+	
 }
